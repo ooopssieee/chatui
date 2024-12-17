@@ -24,7 +24,7 @@ const ChatInterface = ({ messagesProp = [] }) => {
   const handleSendMessage = async () => {
     if (newMessage.trim() && userId) {
       try {
-        const response = await fetch("https://nxmtxb.duckdns.org:5000/chat", {
+        const response = await fetch("https://nxmtxb.duckdns.org/chat", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
